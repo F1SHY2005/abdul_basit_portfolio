@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Abdul Basit</title>
+<meta name="description" content="Engineering projects by Abdul Basit covering engineering software, artificial intelligence, electrical engineering, computer vision, and technical research.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230a0e12%22/><path d=%22M20 70 L45 30 L45 55 L80 55 L55 20 L55 45 L20 45 Z%22 fill=%22%234c97e8%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="status-strip">
+    <div class="container">
+      <span><span class="status-dot"></span> SYSTEM ONLINE</span>
+    </div>
+  </div>
+  <nav class="nav container">
+    <a href="index.html" class="nav-brand">BASIT<span class="dot">.</span><small>EE PORTFOLIO</small></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">MENU</button>
+  </nav>
+</div>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Projects</div>
+    <div class="eyebrow">Engineering Portfolio</div>
+    <h1>Engineering Projects & Research.</h1>
+    <p class="hero-lead">Explore a collection of engineering software, artificial intelligence, electrical engineering, control systems, and research projects developed throughout my academic and professional journey.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="filter-bar" data-filter-bar>
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="power">Power Systems</button>
+      <button data-filter="protection">Protection</button>
+      <button data-filter="control">Control Systems</button>
+      <button data-filter="ai">Applied AI</button>
+    </div>
+
+    <div class="grid-3" style="align-items:start;">
+
+      <article class="project-card frame" data-domain="ai" id="vehicle-image-classifier">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Computer Vision · Deep Learning</span>
+            <h3>Vehicle Image Classifier</h3>
+          </div>
+          <span class="pc-status">COMPLETED</span>
+        </div>
+
+        <div class="pc-body">
+          <p><b>Problem —</b> Developing an accurate image classification system capable of distinguishing between multiple vehicle categories is challenging due to variations in lighting, viewing angles, backgrounds, and visual similarities between different vehicle types.</p>
+
+          <p><b>Approach —</b> Developed a deep learning image classification model using TensorFlow and EfficientNetB0 with transfer learning. The dataset consisted of 20 vehicle categories, including cars, buses, trucks, motorcycles, airplanes, helicopters, boats, bicycles, and other transportation classes. Applied data augmentation, image preprocessing, transfer learning, and model fine-tuning to improve classification accuracy and generalization.</p>
+
+          <p><b>Result —</b> Successfully trained a multi-class image classifier capable of recognizing 20 different vehicle categories. The project demonstrates the effectiveness of transfer learning and EfficientNetB0 for real-world computer vision applications while providing a scalable foundation for intelligent transportation and image recognition systems.</p>
+
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">EfficientNetB0</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Image_classification_project.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project Report →</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card frame" data-domain="control" id="lead-lag-trms">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Control Systems · Classical Control</span>
+            <h3>Lead-Lag Compensator Design for TRMS</h3>
+          </div>
+          <span class="pc-status">COMPLETED</span>
+        </div>
+
+        <div class="pc-body">
+          <p><b>Problem —</b> Designed a Lead-Lag compensator for the pitch channel of the Twin Rotor Multi-Input Multi-Output System (TRMS). The objective was to improve transient response, reduce overshoot, and stabilize the system using the Root Locus technique.</p>
+
+          <p><b>Approach —</b> Converted the TRMS state-space model into a transfer function, analyzed the open-loop dynamics using Root Locus, and designed an optimized Lead-Lag controller in MATLAB. The controller parameters were selected through controller optimization and validated using Root Locus, step response, pole-zero map, and Bode plot analysis.</p>
+
+          <p><b>Result —</b> Achieved a stable closed-loop controller with approximately 2.38% overshoot while maintaining system stability. The project demonstrates the application of classical control theory and MATLAB for controller design of higher-order dynamic systems.</p>
+
+          <div class="card-tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Control Systems</span>
+            <span class="tag">Root Locus</span>
+            <span class="tag">Lead-Lag Controller</span>
+            <span class="tag">TRMS</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Lead-Lag Compensator.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project Report →</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card frame" data-domain="control" id="body-temperature-monitor">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Embedded Systems · Instrumentation</span>
+            <h3>Digital Body Temperature Monitoring System</h3>
+          </div>
+          <span class="pc-status">COMPLETED</span>
+        </div>
+
+        <div class="pc-body">
+          <p><b>Problem —</b> Designed a reliable embedded temperature monitoring system capable of accurately measuring body temperature, displaying real-time readings, and providing an audible warning when abnormal temperatures are detected.</p>
+
+          <p><b>Approach —</b> Developed the system using an Arduino UNO and a DS18B20 digital temperature sensor communicating via the One-Wire protocol. The measured temperature is processed using smoothing and calibration algorithms before being displayed on a 16×2 LCD. A buzzer-based alarm system is activated whenever the estimated body temperature exceeds a predefined threshold.</p>
+
+          <p><b>Result —</b> Successfully implemented a stable and accurate digital body temperature monitoring system with real-time LCD display, configurable alarm thresholds, digital filtering, and reliable sensor communication, demonstrating practical embedded systems and instrumentation design.</p>
+
+          <div class="card-tags">
+            <span class="tag">Arduino UNO</span>
+            <span class="tag">Embedded C</span>
+            <span class="tag">DS18B20</span>
+            <span class="tag">Instrumentation</span>
+            <span class="tag">LCD Interface</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Temp sensor.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project Report →</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card frame" data-domain="control" id="trms-analysis">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Control Systems · State-Space Analysis</span>
+            <h3>Analysis of the Twin Rotor MIMO (TRMS) System</h3>
+          </div>
+          <span class="pc-status">COMPLETED</span>
+        </div>
+
+        <div class="pc-body">
+          <p><b>Problem —</b> Implemented and analyzed the Twin Rotor Multi-Input Multi-Output (TRMS) system using classical control and state-space techniques to investigate its dynamic behavior, stability, controllability, observability, and structural characteristics.</p>
+
+          <p><b>Approach —</b> Developed the sixth-order TRMS state-space model in MATLAB, derived its transfer function matrix, and performed root locus analysis, transient response evaluation, eigenvalue analysis, controllability and observability tests, PBH criterion, observability Gramian, Hankel singular value analysis, minimal realization, and hidden-state investigation.</p>
+
+          <p><b>Result —</b> Demonstrated that the TRMS model is open-loop stable and completely controllable while identifying one internally stable but unobservable state. The sixth-order system was successfully reduced to an equivalent fifth-order realization without altering its observable input-output behavior.</p>
+
+          <div class="card-tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">State-Space Analysis</span>
+            <span class="tag">Control Systems</span>
+            <span class="tag">Root Locus</span>
+            <span class="tag">TRMS</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Analysis of TRMS.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project Report →</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card frame" data-domain="control" id="boiler-monitoring">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Industrial Automation · MATLAB Simulink</span>
+            <h3>Industrial Boiler Temperature &amp; Flame Monitoring System</h3>
+          </div>
+          <span class="pc-status">COMPLETED</span>
+        </div>
+
+        <div class="pc-body">
+          <p><b>Problem —</b> Designed and simulated an industrial boiler monitoring system capable of continuously measuring boiler temperature and detecting flame presence to improve operational safety through integrated temperature supervision and flame monitoring.</p>
+
+          <p><b>Approach —</b> Developed the complete system in MATLAB Simulink using a Pt100 RTD sensor for temperature measurement and a photodiode for flame detection. The design integrates signal conditioning, a 10-bit ADC, a microcontroller model, over-temperature alarm logic, amplification, low-pass filtering, and threshold-based flame detection.</p>
+
+          <p><b>Result —</b> Successfully validated the monitoring platform over a 0–150°C operating range. The system accurately reconstructed temperature measurements, activated the alarm above 120°C, and reliably detected normal, weak, and absent flame conditions.</p>
+
+          <div class="card-tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Simulink</span>
+            <span class="tag">Industrial Automation</span>
+            <span class="tag">Instrumentation</span>
+            <span class="tag">Control Systems</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Temp Monitor System.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project Report →</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project-card frame" data-domain="power" id="ee-toolkit">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Engineering Software · Web Development</span>
+            <h3>EE Toolkit</h3>
+          </div>
+          <span class="pc-status dev">IN DEVELOPMENT</span>
+        </div>
+
+        <div class="pc-body">
+          <p><b>Problem —</b> Engineers and students often rely on multiple websites and manual calculations for common electrical engineering formulas, making problem-solving inefficient and time-consuming.</p>
+
+          <p><b>Approach —</b> Developed a web-based Electrical Engineering Toolkit using HTML, CSS, and JavaScript. The application provides a centralized collection of engineering calculators covering Ohm's Law, power calculations, three-phase systems, transformers, resistor color codes, voltage drop, reactance, battery life, wire resistance, energy cost, and other commonly used electrical engineering calculations through a modular architecture.</p>
+
+          <p><b>Status —</b> The core application and multiple calculator modules have been implemented with a responsive interface, modular JavaScript architecture, search and category filtering. Additional engineering calculators, enhanced unit support, result history, and export capabilities are planned for future development.</p>
+
+          <div class="card-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Engineering Software</span>
+            <span class="tag">Electrical Engineering</span>
+          </div>
+          <p style="margin-top:18px;">
+            <a href="documents/EE_Toolkit.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project Report →</a>
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+
+    <div class="section-heading" style="margin-bottom:40px;">
+      <div>
+        <div class="eyebrow">Research Publications</div>
+        <h2>Published Research</h2>
+        <p>Peer-reviewed publications and ongoing research contributions.</p>
+      </div>
+    </div>
+
+    <div class="grid-3" style="align-items:start;">
+
+      <article class="project-card frame" id="paper-polymer-network">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Chemical Graph Theory</span>
+            <h3>Topological Descriptors of Line Graphs in Polymer Supramolecular Networks</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Graph-theoretic analysis of polymer supramolecular networks through line graph construction and degree-based topological descriptors for quantitative structural characterization.</p>
+
+          <p><b>Contribution —</b> Derived closed-form expressions for numerous graph invariants including Zagreb, Randić, Harmonic, Atom-Bond Connectivity, Geometric-Arithmetic, Forgotten, Gourava and related topological indices supporting QSAR and QSPR analysis.</p>
+
+          <div class="card-tags">
+            <span class="tag">Graph Theory</span>
+            <span class="tag">Mathematical Chemistry</span>
+            <span class="tag">Topological Indices</span>
+            <span class="tag">QSAR</span>
+            <span class="tag">QSPR</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Topological+Descriptors+of+Line+Graphs+in+Polymer+Supramolecular+Networks.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+      <article class="project-card frame" id="paper-channel-fading">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Wireless Communications</span>
+            <h3>Advanced Channel Fading Parameter Estimation using the Generalized Gamma Distribution</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Investigates parameter estimation techniques for generalized Gamma fading channels to improve the accuracy and reliability of wireless communication system modeling under varying propagation conditions.</p>
+
+          <p><b>Contribution —</b> Developed and evaluated a Psi-Inverse estimation approach alongside Maximum Likelihood estimation through Monte Carlo simulations, demonstrating improved estimation accuracy and robustness across different sample sizes.</p>
+
+          <div class="card-tags">
+            <span class="tag">Wireless Communications</span>
+            <span class="tag">Signal Processing</span>
+            <span class="tag">Statistical Modeling</span>
+            <span class="tag">Monte Carlo</span>
+            <span class="tag">R</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/An+Advanced+Method+for+Channel+Fading+Parameter+Estimation+Based+on+the+Generalized+Gamma+Distribution.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+      <article class="project-card frame" id="paper-supercrypt">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Artificial Intelligence</span>
+            <h3>Design and Implementation of a Scalable Deep Learning-Based Cryptocurrency Price Prediction and Automated Trading</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Developed a scalable AI-powered cryptocurrency trading platform that combines deep learning models with real-time market data to generate price predictions and support intelligent trading decisions through a secure web application.</p>
+
+          <p><b>Contribution —</b> Implemented an end-to-end architecture featuring GRU and BiLSTM prediction models, Django and FastAPI backend services, PostgreSQL database integration, Binance API connectivity, secure authentication, and an interactive dashboard for real-time market analysis and automated trading workflows.</p>
+
+          <div class="card-tags">
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Cryptocurrency</span>
+            <span class="tag">GRU</span>
+            <span class="tag">BiLSTM</span>
+            <span class="tag">Django</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Binance API</span>
+            <span class="tag">Python</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Design+and+Implementation+of+a+Scalable+Deep+Learning-Based+Cryptocurrency+Price+Prediction+and+Automated+Trading.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+      <article class="project-card frame" id="paper-distance-relay-statcom">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Power Systems Protection</span>
+            <h3>Performance of Distance Relay with Different Impedance Characteristics in the Presence of STATCOM for Various Faults on Transmission Lines</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Investigated the influence of STATCOM-based FACTS compensation on distance relay performance under different transmission line fault conditions using MATLAB/Simulink and impedance-based protection analysis.</p>
+
+          <p><b>Contribution —</b> Evaluated mho and quadrilateral relay characteristics, developed protection zone coordination, analyzed impedance measurement under various fault scenarios, and assessed the impact of STATCOM on transmission line protection reliability.</p>
+
+          <div class="card-tags">
+            <span class="tag">Power Systems</span>
+            <span class="tag">Distance Relay</span>
+            <span class="tag">STATCOM</span>
+            <span class="tag">FACTS</span>
+            <span class="tag">MATLAB/Simulink</span>
+            <span class="tag">Transmission Lines</span>
+            <span class="tag">Protection</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Performance+of+Distance+Relay+with+Different+Impedance+Characteristics+in+the+Presence+of+STATCOM+for+Various+Faults+on+Transmission+Lines+(1)_compressed.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+      <article class="project-card frame" id="paper-genai-education">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Artificial Intelligence in Education</span>
+            <h3>Enhancing Teaching and Learning Through Generative Artificial Intelligence: Benefits, Challenges, and Ethical Considerations</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Explores the impact of Generative AI technologies such as ChatGPT on modern education by examining their role in personalized learning, student engagement, academic support, and responsible classroom integration.</p>
+
+          <p><b>Contribution —</b> Conducted a comprehensive review and quantitative analysis of recent GenAI research, evaluating technology adoption frameworks, ethical considerations, AI-assisted learning strategies, and evidence-based recommendations for responsible implementation in educational institutions.</p>
+
+          <div class="card-tags">
+            <span class="tag">Generative AI</span>
+            <span class="tag">ChatGPT</span>
+            <span class="tag">Education</span>
+            <span class="tag">AI Ethics</span>
+            <span class="tag">Educational Technology</span>
+            <span class="tag">PLS-SEM</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Enhancing+Teaching+and+Learning+Through+Generative+Artificial+Intelligence+Benefits,+Challenges,+and+Ethical+Considerations+(1).pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+      <article class="project-card frame" id="paper-ai-control-systems">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Artificial Intelligence &amp; Control Systems</span>
+            <h3>Artificial Intelligence Based Control Systems for Robotics and Renewable Energy Applications</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Conducted a comprehensive review of modern artificial intelligence-based control strategies for robotics and renewable energy systems, examining neural networks, fuzzy logic, reinforcement learning, evolutionary optimization, model predictive control, and hybrid intelligent controllers for complex electrical engineering applications.</p>
+
+          <p><b>Contribution —</b> Performed a comparative analysis between AI-driven and conventional control methods, highlighting their strengths, limitations, practical implementation challenges, and future research directions while providing engineering design guidelines for intelligent control in robotics, power electronics, microgrids, and renewable energy systems.</p>
+
+          <div class="card-tags">
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Control Systems</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">Renewable Energy</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Neural Networks</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Fuzzy Logic</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Artificial+Intelligence+Based+Control+Systems+for+Robotics+and+Renewable+Energy+Applications+(1).pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+      <article class="project-card frame" id="paper-smartwatch-healthcare">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Wearable Healthcare Engineering</span>
+            <h3>Comfort Enhancement in Smartwatch Design Optimization for Continuous Elderly Healthcare Monitoring</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Developed a human-centered smartwatch design framework for continuous elderly healthcare monitoring by integrating ergonomic design, thermal management, biocompatible materials, and low-power sensing techniques to improve long-term wearability, user comfort, and monitoring reliability in challenging environments.</p>
+
+          <p><b>Contribution —</b> Proposed an optimized wearable system architecture featuring adaptive sensor duty cycling, thermal regulation, ergonomic optimization, breathable medical materials, zirconia ceramic backplates, and energy-efficient electronics to reduce skin irritation, heat generation, and power consumption while maintaining continuous health monitoring performance.</p>
+
+          <div class="card-tags">
+            <span class="tag">Wearable Technology</span>
+            <span class="tag">Healthcare Engineering</span>
+            <span class="tag">Smartwatch Design</span>
+            <span class="tag">Biomedical Engineering</span>
+            <span class="tag">Thermal Management</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">Ergonomics</span>
+            <span class="tag">IoT Healthcare</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/Comfort+enhancement+in+smartwatch+design+optimization+for+continuous+elderly+healthcare+monitoring+(1).pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+      <article class="project-card frame" id="paper-ai-medical-image-predictor">
+        <div class="pc-head">
+          <div>
+            <span class="pc-domain">Research Paper · Artificial Intelligence in Healthcare</span>
+            <h3>AI-Based Medical Image Predictor Using Convolutional Neural Networks for Multi-Disease Detection</h3>
+          </div>
+          <span class="pc-status">PUBLISHED</span>
+        </div>
+
+        <div class="pc-body">
+
+          <p><b>Overview —</b> Developed a deep learning-based medical image analysis platform that utilizes Convolutional Neural Networks (CNNs) to assist healthcare professionals in detecting multiple diseases from X-ray, CT, and MRI images through an intelligent web-based diagnostic system.</p>
+
+          <p><b>Contribution —</b> Designed an end-to-end AI diagnostic framework capable of classifying multiple medical conditions, generating confidence-based predictions, and supporting faster clinical decision-making using automated image processing and deep learning techniques.</p>
+
+          <div class="card-tags">
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Convolutional Neural Networks</span>
+            <span class="tag">Medical Imaging</span>
+            <span class="tag">Healthcare AI</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Image Classification</span>
+            <span class="tag">Python</span>
+          </div>
+
+          <p style="margin-top:18px;">
+            <a href="documents/AI-Based+Medical+Image+Predictor+Using+Convolutional+Neural+Networks+for+Multi-Disease+Detection.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Research Paper →</a>
+          </p>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="container">
+    <div class="callout frame" style="background:var(--surface);">
+      <div>
+        <div class="eyebrow" style="margin-bottom:8px;">Source &amp; Docs</div>
+        <h3>Most of these have write-ups or repos</h3>
+        <p>Ask directly and I'll point you to the relevant report, notebook, or Simulink model.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Ask about a project →</a>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
